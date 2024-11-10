@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import { Skills } from '@/components/skills';
 const About = () => {
   return (
     <div>
@@ -16,41 +17,10 @@ const About = () => {
             <button className='bt2'></button>
             <button className='bt2'></button>
         </div>
-        <Skills />
+        <Skills/>
     </div>
   )
 }
 
 export default About
 
-export const Skills = ()=>{
-    return(
-        <div>
-            <h1 className='heading'>My Skills</h1>
-            <div>
-                <h2 className='skill-h2'>HTML</h2>
-                <div className='bar'></div>
-            </div>
-            <div>
-                <h2 className='skill-h2'>CSS</h2>
-                <div className='bar1'></div>
-            </div>
-            <div>
-                <h2 className='skill-h2'>JavaScript</h2>
-                <div className='bar2'></div>
-            </div>
-            <div>
-                <h2 className='skill-h2'>TypeScript</h2>
-                <div className='bar3'></div>
-            </div>
-            <div>
-                <h2 className='skill-h2'>Next.Js</h2>
-                <div className='bar4'></div>
-            </div>
-            <div>
-                <h2 className='skill-h2'>React</h2>
-                <div className='bar5'></div>
-            </div>
-        </div>
-    )
-}
